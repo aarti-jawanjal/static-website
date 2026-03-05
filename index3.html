@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Future Technology Showcase</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="stars"></div>
+
+<header>
+<h1>🚀 Future Technology Showcase</h1>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="ai.html">AI</a>
+<a href="robotics.html">Robotics</a>
+<a href="space.html">Space Tech</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<h2>Explore The Future of Technology</h2>
+<p>Discover Artificial Intelligence, Robotics and Space Innovations</p>
+
+<button onclick="scrollToTech()">Explore Technologies</button>
+</section>
+
+<div class="floating">
+
+<img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png">
+<img src="https://cdn-icons-png.flaticon.com/512/3212/3212608.png">
+<img src="https://cdn-icons-png.flaticon.com/512/2920/2920277.png">
+
+</div>
+
+<section class="cards" id="tech">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1677442136019-21780ecad995">
+<h3>Artificial Intelligence</h3>
+<p>AI enables machines to learn and make intelligent decisions.</p>
+<a href="ai.html">Learn More</a>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1581093588401-22d3c1e7f02c">
+<h3>Robotics</h3>
+<p>Robots help industries, hospitals and automation.</p>
+<a href="robotics.html">Learn More</a>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa">
+<h3>Space Technology</h3>
+<p>Satellites and rockets help explore space.</p>
+<a href="space.html">Learn More</a>
+</div>
+
+</section>
+
+<section class="stats">
+
+<div class="stat">
+<h2 id="aiCount">0</h2>
+<p>AI Systems</p>
+</div>
+
+<div class="stat">
+<h2 id="robotCount">0</h2>
+<p>Robots</p>
+</div>
+
+<div class="stat">
+<h2 id="satCount">0</h2>
+<p>Satellites</p>
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 Future Technology Showcase | Designed by Aarti Jawanjal</p>
+</footer>
+
+<script>
+
+function scrollToTech(){
+document.getElementById("tech").scrollIntoView({behavior:"smooth"});
+}
+
+let ai=0;
+let robots=0;
+let sats=0;
+
+setInterval(function(){
+
+if(ai<120){
+ai++;
+document.getElementById("aiCount").innerText=ai;
+}
+
+if(robots<80){
+robots++;
+document.getElementById("robotCount").innerText=robots;
+}
+
+if(sats<50){
+sats++;
+document.getElementById("satCount").innerText=sats;
+}
+
+},40);
+
+</script>
+
+</body>
+</html>
